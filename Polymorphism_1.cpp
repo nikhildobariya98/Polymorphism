@@ -5,46 +5,28 @@ class A{
     public :
     
     void fun (int a,int b){
-        
-        cout << "Your Division : "<<a/b;
+    	
+        cout << "Enter Number of 2 (Division) : "<<a/b<<endl;
     }
-    
     void fun (int a,int b ,int c){
-        
-        cout << "Your subtraction of 3 Number : "<< a-b-c;
+    	
+        cout << " Enter Number of 3 (subtraction) : "<< a-b-c<<endl;
     }
-    
     void fun (int a,int b ,int c,int d ){
-        
-        cout << "Your Multiplication of 4 Number : "<< a*b*c*d<<endl;    
+	   
+        cout << "Enter Number of 4 (Multiplication) : "<< a*b*c*d<<endl;    
     }
     void fun (int a,int b ,int c,int d ,int e){
-		
-        cout << "Your Addition of 5 Number : "<< a+b+c+d+e<<endl;        
+    	
+        cout << " Enter Number of 5 (Addition) : "<< a+b+c+d+e<<endl;        
     }
 };
+int main() {	
 
-main() {
+  A arithmetic;
     
-    int a , b , c , d , e ;
-    
-    cout << "Enter The Value  A : ";
-    cin >> a;
-    
-    cout << "Enter The Value  B : ";
-    cin >> b;
-    
-    cout << "Enter The Value  C : ";
-    cin >> c;
-    
-    cout << "Enter The Value  D : ";
-    cin >> d;
-    
-    cout << "Enter The Valuen E : ";
-    cin >> e;
-    
-    A arithmetic;
-    
-    arithmetic.fun(a,b);
-
+    arithmetic.fun(1,2);
+    arithmetic.fun(1,2,3);
+    arithmetic.fun(1,2,3,4);
+    arithmetic.fun(1,2,3,4,5);
 }
