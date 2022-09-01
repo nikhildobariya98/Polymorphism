@@ -1,47 +1,36 @@
 #include <iostream>
-
 using namespace std;
 
-class cricket {
-    public :
-    	
-        int over;       
+class Cricket {
+    public :  	
+        int ovr;       
 };
-
-class T20Match : cricket {
-    
+class T20Match : Cricket {
     public : 
         
     void t20match1(){
         cout << "Enter The T20 Match Over: ";
-        cin >> over;
-        
-        
-    cout << "T20 Match Over : " << over<<endl<<endl;
+        cin >> ovr;
+		        
+    cout << "T20 Match Over : " << ovr<<endl<<endl;
     }
 };
-
-class TestMatch : cricket {
-    
+class TestMatch : Cricket {  
     public : 
     
-    void testmatch1(){
+    void testmatch2(){
         cout << "Enter The Test Match Over: ";
-        cin >> over;
-        
-        
-    cout << "Test Match Over : " << over<<endl<<endl;
+        cin >> ovr;
+
+    cout << "Test Match Over : " << ovr<<endl<<endl;
     }
 };
-
 int main (){
-    
+	
       T20Match t20match;
       TestMatch testmatch;
-
- 
+	   
     t20match.t20match1();
-    testmatch.testmatch1();
-
+    testmatch.testmatch2();
     
 }
