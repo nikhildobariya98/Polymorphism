@@ -24,9 +24,13 @@ class A{
 int main() {	
 
   A arithmetic;
+  
+  int a, b, c, d, e;
+  cout<<"Enter The 5 number:"<<endl;
+  cin >> a >> b >> c >> d >> e;
     
-    arithmetic.fun(1,2);
-    arithmetic.fun(1,2,3);
-    arithmetic.fun(1,2,3,4);
-    arithmetic.fun(1,2,3,4,5);
+    arithmetic.fun(a, b);
+    arithmetic.fun(a, b, c);
+    arithmetic.fun(a, b, c, d);
+    arithmetic.fun(a, b, c, d, e);
 }
